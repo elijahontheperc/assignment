@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    float orng,apl,pr,bud; 
+    double orng,apl,pr,bud; 
     char item;
     
-    printf("*** ITEM PROFILES ***\n");
+    printf("***ITEM PROFILES***\n");
     printf("A: Apple\n");
     printf("O: Orange\n");
     printf("P: Pears\n");
@@ -13,11 +13,11 @@ int main() {
     
     printf("*** SHOPKEEPER PANEL***\n");
     printf("Please enter apple price: $");
-    scanf("%f",&apl);
+    scanf("%lf",&apl);
     printf("Please enter orange price: $");
-    scanf("%f",&orng);
+    scanf("%lf",&orng);
     printf("Please enter pear price: $");
-    scanf("%f",&pr);
+    scanf("%lf",&pr);
     printf("***********************\n\n");
     
     
@@ -25,18 +25,18 @@ int main() {
     
     printf("Here is today's item menu with today's prices!\n\n");
     
-    printf("*** ITEM MENU ***\n");
+    printf("***ITEM MENU***\n");
     printf("Item Prices\n");
-    printf("A: £%0.2f\n",apl);
-    printf("O: £%0.2f\n",orng);
-    printf("P: £%0.2f\n",pr);
-    printf("*****************\n\n");
+    printf("A: £%lf\n",apl);
+    printf("O: £%lf\n",orng);
+    printf("P: £%lf\n",pr);
+    printf("***************\n\n");
     
     
-    printf("*** CUSTOMER PANEL ***\n");
+    printf("***CUSTOMER PANEL***\n");
     printf("Please state your budget: $",bud);
-    scanf("%f", &bud);
-    printf("**********************\n\n");
+    scanf("%lf", &bud);
+    printf("*********************\n\n");
     
     
     printf("Which item would you like to purchase?\n");
@@ -51,7 +51,7 @@ int main() {
             printf("Orange purchased!\n");
             bud-= apl;
             printf("****Remaining budget****\n");
-            printf("Remaining budget: %.2f\n", bud);
+            printf("Remaining budget: %lf\n", bud);
             printf("Thanks for shopping with us!");
            }
            else 
@@ -67,7 +67,7 @@ int main() {
             printf("Apple purchased!\n");  
             bud-= orng;
             printf("****Remaining budget****\n");
-            printf("Remaining budget: %.2f\n", bud);
+            printf("Remaining budget: %lf\n", bud);
             printf("Thanks for shopping with us!");
            }
            else
@@ -82,7 +82,7 @@ int main() {
            {
             printf("Pear purchased!\n");
             bud-= pr;
-            printf("remaining budget: %.2f", bud);
+            printf("remaining budget: %lf", bud);
            }
            else
            {
