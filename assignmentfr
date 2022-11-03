@@ -27,9 +27,9 @@ int main() {
     
     printf("***ITEM MENU***\n");
     printf("Item Prices\n");
-    printf("A: £%lf\n",apl);
-    printf("O: £%lf\n",orng);
-    printf("P: £%lf\n",pr);
+    printf("A: £%.2lf\n",apl);
+    printf("O: £%.2lf\n",orng);
+    printf("P: £%.2lf\n",pr);
     printf("***************\n\n");
     
     
@@ -51,7 +51,7 @@ int main() {
             printf("Orange purchased!\n");
             bud-= apl;
             printf("****Remaining budget****\n");
-            printf("Remaining budget: %lf\n", bud);
+            printf("Remaining budget: %.2lf\n", bud);
             printf("Thanks for shopping with us!");
            }
            else 
@@ -67,7 +67,7 @@ int main() {
             printf("Apple purchased!\n");  
             bud-= orng;
             printf("****Remaining budget****\n");
-            printf("Remaining budget: %lf\n", bud);
+            printf("Remaining budget: %.2lf\n", bud);
             printf("Thanks for shopping with us!");
            }
            else
@@ -82,7 +82,7 @@ int main() {
            {
             printf("Pear purchased!\n");
             bud-= pr;
-            printf("remaining budget: %lf", bud);
+            printf("remaining budget: %.2lf", bud);
            }
            else
            {
