@@ -69,7 +69,7 @@ int main() {
         case 'O':
            if (bud >= orng)
            {
-            printf("Apple purchased!\n");  
+            printf("Orange purchased!\n");  
             bud-= orng;
             printf("****Remaining budget****\n");
             printf("Remaining budget: %.2lf\n", bud);
