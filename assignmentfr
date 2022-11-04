@@ -62,7 +62,7 @@ int main() {
            else 
            {
             printf("Purchase failed!\n");
-            printf("Insufficient funds!");
+            printf("Insufficient funds!\n");
             printf("Thanks for shopping with us!");
            }
          break;
@@ -78,7 +78,7 @@ int main() {
            else
            {
             printf("Purchase failed!\n");
-            printf("Insufficient funds!");
+            printf("Insufficient funds!\n");
             printf("Thanks for shopping with us!");
            }
          break;
@@ -92,14 +92,14 @@ int main() {
            else
            {
             printf("Purchase failed!!!\n");
-            printf("Insufficient funds!");
+            printf("Insufficient funds\n!");
             printf("Thanks for shopping with us!");
            }
            break;
           //Here, If the item that the customer has input is not on the list, the program gets shut down and a message saying missing item pops up m
            default:
            printf("Purchase failed!\n");
-           printf("Missing item!");
+           printf("Missing item!\n");
            printf("Thanks for shopping with us!");
     
     }
