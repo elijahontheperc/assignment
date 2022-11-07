@@ -14,18 +14,16 @@ int main() {
 
     //This is where the Shopkeeper inputs the prices of the items.
     printf("*** SHOPKEEPER PANEL***\n");
-    printf("Please enter apple price: $");
+    printf("Please enter apple price:GBP: ");
     scanf_s("%lf",&apl);
-    printf("Please enter orange price: $");
+    printf("Please enter orange price:GBP: ");
     scanf_s("%lf",&orng);
-    printf("Please enter pear price: $");
+    printf("Please enter pear price:GBP: ");
     scanf_s("%lf",&pear);
     printf("***********************\n\n");
 
     //These 2 input welcomes the customer 
     printf("Hello dear customer and Welcome to the shop!\n\n");
-
-
     printf("Here is today's item menu with today's prices!\n\n");
 
     //This input shows the item menu alongside the prices that the Shopkeeper put
@@ -46,7 +44,7 @@ int main() {
     printf("Which item would you like to purchase?\n");
     printf("Press 'A' if you would like to purchase an apple!\nPress 'O' if you would like to purchase an orange!\nPress 'P' if you would like to purchase a pear!\n\n",apl,orng,pear);
     printf("Please enter the item you want to purchase: ");
-    scanf_s(" %c",&item);
+    scanf_s("%c",&item);
 
     /*Here if the customer has a budget above the item they purchased, the item will be purchased & the remaining will be given back*/
     switch (item) {
@@ -56,7 +54,7 @@ int main() {
             printf("Orange purchased!\n");
             bud -= apl;
             printf("****Remaining budget****\n");
-            printf("Remaining budget: $%.2lf\n",bud);
+            printf("Remaining budget: GBP%.2lf\n",bud);
             printf("Thanks for shopping with us!");
         }
         //Here, if the budget is below the price of the item, the purchased gets failed and a message saying Insufficient funds pops up
@@ -73,7 +71,7 @@ int main() {
             printf("Orange purchased!\n");
             bud -= orng;
             printf("****Remaining budget****\n");
-            printf("Remaining budget: $%.2lf\n",bud);
+            printf("Remaining budget: GBP%.2lf\n",bud);
             printf("Thanks for shopping with us!");
         }
         else
@@ -88,7 +86,7 @@ int main() {
         {
             printf("Pear purchased!\n");
             bud -= pear;
-            printf("remaining budget: $%.2lf",bud);
+            printf("remaining budget: GBP%.2lf",bud);
             printf("Thanks for shopping with us!");
         }
         else
